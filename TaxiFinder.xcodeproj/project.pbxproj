@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A73D1722560BED800194883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1712560BED800194883 /* AppDelegate.swift */; };
+		9A73D1742560BED800194883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1732560BED800194883 /* SceneDelegate.swift */; };
+		9A73D1762560BED800194883 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1752560BED800194883 /* ContentView.swift */; };
+		9A73D1782560BEDE00194883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D1772560BEDE00194883 /* Assets.xcassets */; };
+		9A73D17B2560BEDE00194883 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D17A2560BEDE00194883 /* Preview Assets.xcassets */; };
+		9A73D17E2560BEDE00194883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D17C2560BEDE00194883 /* LaunchScreen.storyboard */; };
+		9A73D1892560BEDE00194883 /* TaxiFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1882560BEDE00194883 /* TaxiFinderTests.swift */; };
+		9A73D1942560BEDF00194883 /* TaxiFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1932560BEDF00194883 /* TaxiFinderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A73D1852560BEDE00194883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A73D1662560BED800194883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A73D16D2560BED800194883;
+			remoteInfo = TaxiFinder;
+		};
+		9A73D1902560BEDF00194883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A73D1662560BED800194883 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A73D16D2560BED800194883;
+			remoteInfo = TaxiFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A73D16E2560BED800194883 /* TaxiFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A73D1712560BED800194883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A73D1732560BED800194883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9A73D1752560BED800194883 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A73D1772560BEDE00194883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A73D17A2560BEDE00194883 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A73D17D2560BEDE00194883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A73D17F2560BEDE00194883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A73D1842560BEDE00194883 /* TaxiFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A73D1882560BEDE00194883 /* TaxiFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiFinderTests.swift; sourceTree = "<group>"; };
+		9A73D18A2560BEDE00194883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A73D18F2560BEDE00194883 /* TaxiFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A73D1932560BEDF00194883 /* TaxiFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiFinderUITests.swift; sourceTree = "<group>"; };
+		9A73D1952560BEDF00194883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A73D16B2560BED800194883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A73D1812560BEDE00194883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A73D18C2560BEDE00194883 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A73D1652560BED800194883 = {
+			isa = PBXGroup;
+			children = (
+				9A73D1702560BED800194883 /* TaxiFinder */,
+				9A73D1872560BEDE00194883 /* TaxiFinderTests */,
+				9A73D1922560BEDF00194883 /* TaxiFinderUITests */,
+				9A73D16F2560BED800194883 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A73D16F2560BED800194883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D16E2560BED800194883 /* TaxiFinder.app */,
+				9A73D1842560BEDE00194883 /* TaxiFinderTests.xctest */,
+				9A73D18F2560BEDE00194883 /* TaxiFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A73D1702560BED800194883 /* TaxiFinder */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D1712560BED800194883 /* AppDelegate.swift */,
+				9A73D1732560BED800194883 /* SceneDelegate.swift */,
+				9A73D1752560BED800194883 /* ContentView.swift */,
+				9A73D1772560BEDE00194883 /* Assets.xcassets */,
+				9A73D17C2560BEDE00194883 /* LaunchScreen.storyboard */,
+				9A73D17F2560BEDE00194883 /* Info.plist */,
+				9A73D1792560BEDE00194883 /* Preview Content */,
+			);
+			path = TaxiFinder;
+			sourceTree = "<group>";
+		};
+		9A73D1792560BEDE00194883 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D17A2560BEDE00194883 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A73D1872560BEDE00194883 /* TaxiFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D1882560BEDE00194883 /* TaxiFinderTests.swift */,
+				9A73D18A2560BEDE00194883 /* Info.plist */,
+			);
+			path = TaxiFinderTests;
+			sourceTree = "<group>";
+		};
+		9A73D1922560BEDF00194883 /* TaxiFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D1932560BEDF00194883 /* TaxiFinderUITests.swift */,
+				9A73D1952560BEDF00194883 /* Info.plist */,
+			);
+			path = TaxiFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A73D16D2560BED800194883 /* TaxiFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A73D1982560BEDF00194883 /* Build configuration list for PBXNativeTarget "TaxiFinder" */;
+			buildPhases = (
+				9A73D16A2560BED800194883 /* Sources */,
+				9A73D16B2560BED800194883 /* Frameworks */,
+				9A73D16C2560BED800194883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiFinder;
+			productName = TaxiFinder;
+			productReference = 9A73D16E2560BED800194883 /* TaxiFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A73D1832560BEDE00194883 /* TaxiFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A73D19B2560BEDF00194883 /* Build configuration list for PBXNativeTarget "TaxiFinderTests" */;
+			buildPhases = (
+				9A73D1802560BEDE00194883 /* Sources */,
+				9A73D1812560BEDE00194883 /* Frameworks */,
+				9A73D1822560BEDE00194883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A73D1862560BEDE00194883 /* PBXTargetDependency */,
+			);
+			name = TaxiFinderTests;
+			productName = TaxiFinderTests;
+			productReference = 9A73D1842560BEDE00194883 /* TaxiFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A73D18E2560BEDE00194883 /* TaxiFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A73D19E2560BEDF00194883 /* Build configuration list for PBXNativeTarget "TaxiFinderUITests" */;
+			buildPhases = (
+				9A73D18B2560BEDE00194883 /* Sources */,
+				9A73D18C2560BEDE00194883 /* Frameworks */,
+				9A73D18D2560BEDE00194883 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A73D1912560BEDF00194883 /* PBXTargetDependency */,
+			);
+			name = TaxiFinderUITests;
+			productName = TaxiFinderUITests;
+			productReference = 9A73D18F2560BEDE00194883 /* TaxiFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A73D1662560BED800194883 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9A73D16D2560BED800194883 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					9A73D1832560BEDE00194883 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9A73D16D2560BED800194883;
+					};
+					9A73D18E2560BEDE00194883 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9A73D16D2560BED800194883;
+					};
+				};
+			};
+			buildConfigurationList = 9A73D1692560BED800194883 /* Build configuration list for PBXProject "TaxiFinder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A73D1652560BED800194883;
+			productRefGroup = 9A73D16F2560BED800194883 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A73D16D2560BED800194883 /* TaxiFinder */,
+				9A73D1832560BEDE00194883 /* TaxiFinderTests */,
+				9A73D18E2560BEDE00194883 /* TaxiFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A73D16C2560BED800194883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73D17E2560BEDE00194883 /* LaunchScreen.storyboard in Resources */,
+				9A73D17B2560BEDE00194883 /* Preview Assets.xcassets in Resources */,
+				9A73D1782560BEDE00194883 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A73D1822560BEDE00194883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A73D18D2560BEDE00194883 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A73D16A2560BED800194883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73D1722560BED800194883 /* AppDelegate.swift in Sources */,
+				9A73D1742560BED800194883 /* SceneDelegate.swift in Sources */,
+				9A73D1762560BED800194883 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A73D1802560BEDE00194883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73D1892560BEDE00194883 /* TaxiFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A73D18B2560BEDE00194883 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73D1942560BEDF00194883 /* TaxiFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A73D1862560BEDE00194883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A73D16D2560BED800194883 /* TaxiFinder */;
+			targetProxy = 9A73D1852560BEDE00194883 /* PBXContainerItemProxy */;
+		};
+		9A73D1912560BEDF00194883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A73D16D2560BED800194883 /* TaxiFinder */;
+			targetProxy = 9A73D1902560BEDF00194883 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A73D17C2560BEDE00194883 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A73D17D2560BEDE00194883 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A73D1962560BEDF00194883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A73D1972560BEDF00194883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A73D1992560BEDF00194883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TaxiFinder/Preview Content\"";
+				DEVELOPMENT_TEAM = KK654UCVNQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TaxiFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarechefs.TaxiFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A73D19A2560BEDF00194883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TaxiFinder/Preview Content\"";
+				DEVELOPMENT_TEAM = KK654UCVNQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TaxiFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarechefs.TaxiFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A73D19C2560BEDF00194883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK654UCVNQ;
+				INFOPLIST_FILE = TaxiFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarechefs.TaxiFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxiFinder.app/TaxiFinder";
+			};
+			name = Debug;
+		};
+		9A73D19D2560BEDF00194883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK654UCVNQ;
+				INFOPLIST_FILE = TaxiFinderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarechefs.TaxiFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxiFinder.app/TaxiFinder";
+			};
+			name = Release;
+		};
+		9A73D19F2560BEDF00194883 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK654UCVNQ;
+				INFOPLIST_FILE = TaxiFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarechefs.TaxiFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaxiFinder;
+			};
+			name = Debug;
+		};
+		9A73D1A02560BEDF00194883 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KK654UCVNQ;
+				INFOPLIST_FILE = TaxiFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwarechefs.TaxiFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaxiFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A73D1692560BED800194883 /* Build configuration list for PBXProject "TaxiFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A73D1962560BEDF00194883 /* Debug */,
+				9A73D1972560BEDF00194883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A73D1982560BEDF00194883 /* Build configuration list for PBXNativeTarget "TaxiFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A73D1992560BEDF00194883 /* Debug */,
+				9A73D19A2560BEDF00194883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A73D19B2560BEDF00194883 /* Build configuration list for PBXNativeTarget "TaxiFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A73D19C2560BEDF00194883 /* Debug */,
+				9A73D19D2560BEDF00194883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A73D19E2560BEDF00194883 /* Build configuration list for PBXNativeTarget "TaxiFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A73D19F2560BEDF00194883 /* Debug */,
+				9A73D1A02560BEDF00194883 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A73D1662560BED800194883 /* Project object */;
+}
