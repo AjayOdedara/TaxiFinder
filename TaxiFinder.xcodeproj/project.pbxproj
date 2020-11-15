@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		9A73D1722560BED800194883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1712560BED800194883 /* AppDelegate.swift */; };
 		9A73D1742560BED800194883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1732560BED800194883 /* SceneDelegate.swift */; };
-		9A73D1762560BED800194883 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1752560BED800194883 /* ContentView.swift */; };
 		9A73D1782560BEDE00194883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D1772560BEDE00194883 /* Assets.xcassets */; };
 		9A73D17B2560BEDE00194883 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D17A2560BEDE00194883 /* Preview Assets.xcassets */; };
 		9A73D17E2560BEDE00194883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D17C2560BEDE00194883 /* LaunchScreen.storyboard */; };
 		9A73D1892560BEDE00194883 /* TaxiFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1882560BEDE00194883 /* TaxiFinderTests.swift */; };
 		9A73D1942560BEDF00194883 /* TaxiFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1932560BEDF00194883 /* TaxiFinderUITests.swift */; };
+		9A73D1B22560C49400194883 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1B12560C49400194883 /* TabBarView.swift */; };
+		9A73D1BE2560C53D00194883 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1BC2560C53D00194883 /* Shape.swift */; };
+		9A73D1BF2560C53D00194883 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1BD2560C53D00194883 /* View+Ext.swift */; };
+		9ADAA890256195EC006CBD85 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA88F256195EB006CBD85 /* TabItem.swift */; };
+		9ADAA8A3256196AB006CBD85 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA8A2256196AB006CBD85 /* HomeView.swift */; };
+		9ADAA8AB25619CC6006CBD85 /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA8AA25619CC6006CBD85 /* VehicleViewModel.swift */; };
+		9ADAA8B025619D0E006CBD85 /* VehicleFetchedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA8AF25619D0E006CBD85 /* VehicleFetchedResponse.swift */; };
+		9ADAA8B525619D58006CBD85 /* VehicleListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAA8B425619D57006CBD85 /* VehicleListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,6 @@
 		9A73D16E2560BED800194883 /* TaxiFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A73D1712560BED800194883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A73D1732560BED800194883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A73D1752560BED800194883 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9A73D1772560BEDE00194883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A73D17A2560BEDE00194883 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A73D17D2560BEDE00194883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,14 @@
 		9A73D18F2560BEDE00194883 /* TaxiFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A73D1932560BEDF00194883 /* TaxiFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiFinderUITests.swift; sourceTree = "<group>"; };
 		9A73D1952560BEDF00194883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A73D1B12560C49400194883 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		9A73D1BC2560C53D00194883 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		9A73D1BD2560C53D00194883 /* View+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		9ADAA88F256195EB006CBD85 /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		9ADAA8A2256196AB006CBD85 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9ADAA8AA25619CC6006CBD85 /* VehicleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		9ADAA8AF25619D0E006CBD85 /* VehicleFetchedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleFetchedResponse.swift; sourceTree = "<group>"; };
+		9ADAA8B425619D57006CBD85 /* VehicleListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,14 @@
 		9A73D1702560BED800194883 /* TaxiFinder */ = {
 			isa = PBXGroup;
 			children = (
-				9A73D1712560BED800194883 /* AppDelegate.swift */,
-				9A73D1732560BED800194883 /* SceneDelegate.swift */,
-				9A73D1752560BED800194883 /* ContentView.swift */,
+				9A73D1A42560C00A00194883 /* App */,
+				9A73D1BB2560C53D00194883 /* Extensions */,
+				9A73D1B12560C49400194883 /* TabBarView.swift */,
+				9ADAA8A2256196AB006CBD85 /* HomeView.swift */,
+				9ADAA8B425619D57006CBD85 /* VehicleListItemView.swift */,
+				9ADAA8AA25619CC6006CBD85 /* VehicleViewModel.swift */,
+				9ADAA88F256195EB006CBD85 /* TabItem.swift */,
+				9ADAA8AF25619D0E006CBD85 /* VehicleFetchedResponse.swift */,
 				9A73D1772560BEDE00194883 /* Assets.xcassets */,
 				9A73D17C2560BEDE00194883 /* LaunchScreen.storyboard */,
 				9A73D17F2560BEDE00194883 /* Info.plist */,
@@ -134,6 +153,24 @@
 				9A73D1952560BEDF00194883 /* Info.plist */,
 			);
 			path = TaxiFinderUITests;
+			sourceTree = "<group>";
+		};
+		9A73D1A42560C00A00194883 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D1712560BED800194883 /* AppDelegate.swift */,
+				9A73D1732560BED800194883 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9A73D1BB2560C53D00194883 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A73D1BC2560C53D00194883 /* Shape.swift */,
+				9A73D1BD2560C53D00194883 /* View+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A73D1BE2560C53D00194883 /* Shape.swift in Sources */,
+				9ADAA8A3256196AB006CBD85 /* HomeView.swift in Sources */,
 				9A73D1722560BED800194883 /* AppDelegate.swift in Sources */,
+				9A73D1BF2560C53D00194883 /* View+Ext.swift in Sources */,
+				9ADAA890256195EC006CBD85 /* TabItem.swift in Sources */,
+				9ADAA8AB25619CC6006CBD85 /* VehicleViewModel.swift in Sources */,
+				9ADAA8B525619D58006CBD85 /* VehicleListItemView.swift in Sources */,
 				9A73D1742560BED800194883 /* SceneDelegate.swift in Sources */,
-				9A73D1762560BED800194883 /* ContentView.swift in Sources */,
+				9ADAA8B025619D0E006CBD85 /* VehicleFetchedResponse.swift in Sources */,
+				9A73D1B22560C49400194883 /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
