@@ -15,7 +15,6 @@ struct VehicleListItemView: View {
 			HStack(spacing: 0){
 				image
 				title
-				
 			}.cornerRadius(8)
 		}
 	}
@@ -32,10 +31,5 @@ struct VehicleListItemView: View {
 			.foregroundColor(item.status == .active ? Color.green.opacity(0.7) : Color.pink.opacity(0.7) )
 			.frame(width: 60, height: 60)
 			.padding(8)
-//			.renderingMode(.original)
-//			.padding(5)
-//			.background(item.status == .active ? Color.green.opacity(0.5) : Color.pink.opacity(0.5) )
-//			.clipShape(Circle())
-//			.frame(width: 30, height: 30, alignment: .center)
 	}
 }

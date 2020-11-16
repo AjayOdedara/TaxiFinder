@@ -12,6 +12,7 @@ import MapKit
 
 final class VehicleViewModel: ObservableObject {
 	
+	@Published private(set) var state = State.idle
 	@Published var coordinates = Coordinate(latitude: 53.694865, longitude: 9.757589)
 	@Published var vehicleListData: [VehicleViewModel.ListItem] = []
 	
@@ -24,7 +25,6 @@ final class VehicleViewModel: ObservableObject {
 	) {
 		self.vehiclesFetchService = vehiclesFetchService
 		$coordinates
-			.dropFirst(1)
 			.debounce(for: .seconds(0.5), scheduler: scheduler)
 			.sink(receiveValue: fetchVehicles(forBounds:))
 			.store(in: &disposables)
@@ -62,9 +62,6 @@ extension VehicleViewModel{
 		
 		var id: String {
 			return "\(item.id)"
-		}
-		var palceName: String {
-			return "\(item.coordinate.latitude)" + "\n" + "\(item.coordinate.longitude)"
 		}
 		var location: Coordinate {
 			return item.coordinate

@@ -28,11 +28,12 @@ struct HomeView : View {
 	}
 	var vehiclesListView: some View{
 		NavigationView {
-			list(of: viewModel.vehicleListData)
-			.navigationBarTitle(TabItem.vehicles.rawValue)
-		}
-		
+			if viewModel.vehicleListData.count > 0{
+				list(of: viewModel.vehicleListData)
+					.navigationBarTitle(TabItem.vehicles.rawValue)
+			}else { Text("Got an error while loading") }
 			
+		}
 	}
 	var body: some View{
 		

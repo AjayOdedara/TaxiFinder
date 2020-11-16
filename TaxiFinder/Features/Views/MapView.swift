@@ -43,8 +43,16 @@ struct MapView : UIViewRepresentable {
 	}
 	func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
 		print("I am being called!")
+		
 		for item in vehicles{
 			
+			let point = MKPointAnnotation()
+			let location = CLLocation(latitude: item.location.latitude, longitude: item.location.longitude)
+			point.subtitle = item.status.rawValue
+			point.coordinate = location.coordinate
+			uiView.addAnnotation(point)
+			/*
+			/// For location `address`
 			let location = CLLocation(latitude: item.location.latitude, longitude: item.location.longitude)
 			location.placemark { placemark, error in
 				let point = MKPointAnnotation()
@@ -57,6 +65,7 @@ struct MapView : UIViewRepresentable {
 				point.coordinate = location.coordinate
 				uiView.addAnnotation(point)
 			}
+			*/
 		}
 	}
 	
@@ -80,7 +89,7 @@ struct MapView : UIViewRepresentable {
 				let recent = location.timestamp.timeIntervalSinceNow
 				guard location.horizontalAccuracy < 20 && abs(recent) < 10 else { continue }
 				parent.coordinates = Coordinate(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-				let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+				let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 2000, longitudinalMeters: 2000)
 				self.parent.map.region = region
 			}
 		}
