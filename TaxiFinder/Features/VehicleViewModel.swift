@@ -12,9 +12,9 @@ import MapKit
 
 final class VehicleViewModel: ObservableObject {
 	
-	@Published private(set) var state = State.idle
 	@Published var coordinates = Coordinate(latitude: 53.694865, longitude: 9.757589)
 	@Published var vehicleListData: [VehicleViewModel.ListItem] = []
+	@Published var state = State.idle
 	
 	private let vehiclesFetchService: VehiclesFetchService
 	private var disposables = Set<AnyCancellable>()
@@ -31,6 +31,10 @@ final class VehicleViewModel: ObservableObject {
 	}
 	
 	func fetchVehicles(forBounds coordinates: Coordinate) {
+		DispatchQueue.main.async{
+			self.state = .loading
+		}
+		
 		vehiclesFetchService.fetchVehicles(forBounds: coordinates)
 			.map { response in
 				response.list.map(VehicleViewModel.ListItem.init)
@@ -40,7 +44,9 @@ final class VehicleViewModel: ObservableObject {
 				receiveCompletion: { [weak self] value in
 					guard let self = self else { return }
 					switch value {
-					case .failure:
+					case .failure(let error):
+						let error = VehicleFetchError.network(description: error.localizedDescription.description)
+						self.state = .error(error)
 						self.vehicleListData = []
 					case .finished:
 						break
@@ -49,12 +55,19 @@ final class VehicleViewModel: ObservableObject {
 				receiveValue: { [weak self] data in
 					guard let self = self else { return }
 					self.vehicleListData = data
+					self.state = .loaded(data)
 				})
 			.store(in: &disposables)
 	}
 }
 
 extension VehicleViewModel{
+	enum State {
+			case idle
+			case loading
+			case loaded([VehicleViewModel.ListItem])
+			case error(VehicleFetchError)
+	}
 	
 	struct ListItem: Identifiable {
 		
@@ -68,6 +81,9 @@ extension VehicleViewModel{
 		}
 		var status: Status{
 			return item.state
+		}
+		var type: VehicleType{
+			return item.type
 		}
 		init(item: Vehicle) {
 			self.item = item

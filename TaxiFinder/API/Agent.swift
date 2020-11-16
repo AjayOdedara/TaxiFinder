@@ -18,7 +18,7 @@ struct Agent {
 			.decode(type: T.self, decoder: JSONDecoder())
 			.receive(on: DispatchQueue.main)
 			.mapError { error in
-				.network(description: error.localizedDescription)
+				.network(description: error.localizedDescription.description)
 			}
 			.eraseToAnyPublisher()
 	}

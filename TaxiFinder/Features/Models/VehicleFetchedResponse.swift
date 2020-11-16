@@ -21,7 +21,7 @@ struct Vehicle: Codable {
 	let id: Int
 	let coordinate: Coordinate
 	let state: Status
-	let type: TypeEnum
+	let type: VehicleType
 	let heading: Double
 }
 
@@ -35,6 +35,6 @@ enum Status: String, Codable {
 	case inActive = "INACTIVE"
 }
 
-enum TypeEnum: String, Codable {
+enum VehicleType: String, Codable {
 	case taxi = "TAXI"
 }

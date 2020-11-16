@@ -33,13 +33,7 @@ extension VehiclesFetchService: VehicleFetchable {
 	private func fetch<T>(
 		with components: URLComponents
 	) -> AnyPublisher<T, VehicleFetchError> where T: Decodable {
-		/*
-		let base = URL(string: "https://poi-api.mytaxi.com/PoiService/poi/v1?
-			p2Lat=53.394655
-			&p1Lon=9.757589
-			&p1Lat=53.694865
-			&p2Lon=10.099891")!
-		*/
+	
 		guard let url = components.url else {
 			let error = VehicleFetchError.network(description: "Couldn't create URL")
 			return Fail(error: error).eraseToAnyPublisher()
@@ -51,7 +45,6 @@ extension VehiclesFetchService: VehicleFetchable {
 
 // MARK: - Vehicle API
 private extension VehiclesFetchService {
-	///"https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891")!
 	struct VehicleAPI {
 		static let scheme = "https"
 		static let host = "poi-api.mytaxi.com"

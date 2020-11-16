@@ -28,11 +28,23 @@ struct HomeView : View {
 	}
 	var vehiclesListView: some View{
 		NavigationView {
-			if viewModel.vehicleListData.count > 0{
-				list(of: viewModel.vehicleListData)
+			switch viewModel.state{
+			case .idle:
+				Color.clear.eraseToAnyView()
+			case .loading:
+				Spinner(isAnimating: true, style: .large).eraseToAnyView()
+			case .loaded(let vehicles):
+				if vehicles.count > 0{
+					list(of: vehicles)
 					.navigationBarTitle(TabItem.vehicles.rawValue)
-			}else { Text("Got an error while loading") }
-			
+				}else{
+					Text("No vehiles in region or error")
+				}
+			case .error (let error):
+				VStack(alignment: .center) {
+					Text(error.localizedDescription)
+				}
+			}
 		}
 	}
 	var body: some View{

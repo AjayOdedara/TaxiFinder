@@ -11,4 +11,5 @@ import Foundation
 enum VehicleFetchError: Error {
 	case parsing(description: String)
 	case network(description: String)
+	case other(description: String)
 }
