@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9A229004256213DA006BBD94 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A229003256213DA006BBD94 /* Spinner.swift */; };
+		9A22900D25621AFE006BBD94 /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22900C25621AFE006BBD94 /* VehicleTests.swift */; };
+		9A22901825621C47006BBD94 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22901725621C47006BBD94 /* MockService.swift */; };
+		9A22902025621CDC006BBD94 /* MockVehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22901F25621CDC006BBD94 /* MockVehicleData.swift */; };
+		9A22902525621E48006BBD94 /* VehicleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22902425621E48006BBD94 /* VehicleViewModelTests.swift */; };
 		9A73D1722560BED800194883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1712560BED800194883 /* AppDelegate.swift */; };
 		9A73D1742560BED800194883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A73D1732560BED800194883 /* SceneDelegate.swift */; };
 		9A73D1782560BEDE00194883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A73D1772560BEDE00194883 /* Assets.xcassets */; };
@@ -48,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		9A229003256213DA006BBD94 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		9A22900C25621AFE006BBD94 /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
+		9A22901725621C47006BBD94 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		9A22901F25621CDC006BBD94 /* MockVehicleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVehicleData.swift; sourceTree = "<group>"; };
+		9A22902425621E48006BBD94 /* VehicleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModelTests.swift; sourceTree = "<group>"; };
 		9A73D16E2560BED800194883 /* TaxiFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A73D1712560BED800194883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A73D1732560BED800194883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A22900B25621AE2006BBD94 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				9A229003256213DA006BBD94 /* Spinner.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		9A73D1652560BED800194883 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +141,7 @@
 			children = (
 				9A73D1A42560C00A00194883 /* App */,
 				9ADAA8BE25619E78006CBD85 /* API */,
+				9A22900B25621AE2006BBD94 /* Control */,
 				9A73D1BB2560C53D00194883 /* Extensions */,
 				9ADAA8D425619F68006CBD85 /* Features */,
 				9ADAA8CB25619EF9006CBD85 /* Supporting Files */,
@@ -144,6 +161,10 @@
 		9A73D1872560BEDE00194883 /* TaxiFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				9A22900C25621AFE006BBD94 /* VehicleTests.swift */,
+				9A22901725621C47006BBD94 /* MockService.swift */,
+				9A22901F25621CDC006BBD94 /* MockVehicleData.swift */,
+				9A22902425621E48006BBD94 /* VehicleViewModelTests.swift */,
 				9A73D1882560BEDE00194883 /* TaxiFinderTests.swift */,
 				9A73D18A2560BEDE00194883 /* Info.plist */,
 			);
@@ -171,7 +192,6 @@
 		9A73D1BB2560C53D00194883 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9A229003256213DA006BBD94 /* Spinner.swift */,
 				9A73D1BC2560C53D00194883 /* Shape.swift */,
 				9A73D1BD2560C53D00194883 /* View+Ext.swift */,
 			);
@@ -380,7 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A22902025621CDC006BBD94 /* MockVehicleData.swift in Sources */,
+				9A22900D25621AFE006BBD94 /* VehicleTests.swift in Sources */,
+				9A22901825621C47006BBD94 /* MockService.swift in Sources */,
 				9A73D1892560BEDE00194883 /* TaxiFinderTests.swift in Sources */,
+				9A22902525621E48006BBD94 /* VehicleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

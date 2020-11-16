@@ -10,9 +10,7 @@ import Combine
 
 // Protocol
 protocol VehicleFetchable {
-	func fetchVehicles(
-		forBounds bounds: Coordinate
-	) -> AnyPublisher<VehicleFetchedResponse, VehicleFetchError>
+	func fetchVehicles( forBounds bounds: Coordinate ) -> AnyPublisher<VehicleFetchedResponse, VehicleFetchError>
 }
 
 class VehiclesFetchService {

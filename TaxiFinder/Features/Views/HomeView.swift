@@ -35,14 +35,14 @@ struct HomeView : View {
 				Spinner(isAnimating: true, style: .large).eraseToAnyView()
 			case .loaded(let vehicles):
 				if vehicles.count > 0{
-					list(of: vehicles)
+					list(of: vehicles).eraseToAnyView()
 					.navigationBarTitle(TabItem.vehicles.rawValue)
 				}else{
 					Text("No vehiles in region or error")
 				}
 			case .error (let error):
 				VStack(alignment: .center) {
-					Text(error.localizedDescription)
+					Text(error.localizedDescription).eraseToAnyView()
 				}
 			}
 		}
@@ -81,7 +81,6 @@ struct HomeView : View {
 		.padding(.bottom, edges?.bottom == 0 ? 15 : edges?.bottom)
 		.background(Color.white)
 	}
-	
 	
 	private func list(of vehicles: [VehicleViewModel.ListItem]) -> some View {
 		return List(vehicles) { vehicle in
