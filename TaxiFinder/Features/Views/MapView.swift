@@ -51,21 +51,6 @@ struct MapView : UIViewRepresentable {
 			point.subtitle = item.status.rawValue
 			point.coordinate = location.coordinate
 			uiView.addAnnotation(point)
-			/*
-			/// For location `address`
-			let location = CLLocation(latitude: item.location.latitude, longitude: item.location.longitude)
-			location.placemark { placemark, error in
-				let point = MKPointAnnotation()
-				guard let placemark = placemark else {
-					uiView.addAnnotation(point)
-					return
-				}
-				point.title = placemark.streetNumber  + " " + placemark.streetName
-				point.subtitle = placemark.neighborhood
-				point.coordinate = location.coordinate
-				uiView.addAnnotation(point)
-			}
-			*/
 		}
 	}
 	

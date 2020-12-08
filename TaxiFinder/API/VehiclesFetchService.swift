@@ -24,7 +24,7 @@ class VehiclesFetchService {
 
 // MARK: - VehicleFetchable
 extension VehiclesFetchService: VehicleFetchable {
-	func fetchVehicles(forBounds bounds: Coordinate) -> AnyPublisher<VehicleFetchedResponse, VehicleFetchError> {
+	internal func fetchVehicles(forBounds bounds: Coordinate) -> AnyPublisher<VehicleFetchedResponse, VehicleFetchError> {
 		return fetch(with: makeVehicleRequestComponents(forBounds: bounds))
 	}
 	
